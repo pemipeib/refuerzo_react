@@ -3,9 +3,10 @@ import React, {useState} from 'react';
 import Contador from "./Contador";
 import ContadorConHook from "./ContadorConHook";
 import Login from "./Login";
+import Usuarios from "./Usuarios";
 
 const Hooks = () => {
-    const [clase, setClase] = useState(3);
+    const [clase, setClase] = useState(4);
 
     const cambioClase= () => {
         if(clase === 1){
@@ -14,6 +15,8 @@ const Hooks = () => {
             return <ContadorConHook/>;
         }else if(clase === 3){
             return <Login/>;
+        }else if(clase === 4){
+            return <Usuarios/>;
         }
     }
 
@@ -39,6 +42,11 @@ const Hooks = () => {
                     className="btn btn-secondary m-2"
                     onClick={() => setClase(3)}
                 >Login</button>
+
+                <button
+                    className="btn btn-secondary m-2"
+                    onClick={() => setClase(4)}
+                >Usuarios</button>
             </div>
 
             <hr/>
