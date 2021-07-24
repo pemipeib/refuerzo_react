@@ -31,7 +31,6 @@ const useUsuarios = () => {
     const paginaSiguiente= () => {
         paginaRef.current ++;
         cargarUsuarios();
-
     }
 
     const paginaAnterior= () => {
@@ -51,7 +50,7 @@ const useUsuarios = () => {
                         alt={first_name}
                         style={{
                             width: 30,
-                            borderRadius: 100
+                            borderRadius: 100,
                         }}
                     />
                 </td>

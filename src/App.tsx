@@ -4,7 +4,7 @@ import TypeScript from "./typescript/TypeScript";
 import Hooks from "./components/Hooks";
 
 const App= () => {
-    const [clase, setClase] = useState(2);
+    const [clase, setClase] = useState(0);
 
     const cambioClase= () => {
         if(clase === 1){
@@ -31,8 +31,6 @@ const App= () => {
               >Hooks</button>
           </div>
           {cambioClase()}
-          {/*<TypeScript/>*/}
-          {/*<Hooks/>*/}
       </div>
   );
 };
